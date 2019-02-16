@@ -1,0 +1,587 @@
+.box{
+    position: relative;
+    background:url('/assets/redBlack.jpg');
+    height: 200px;
+    width: 550px;
+    overflow: hidden;
+    border-radius: 3px;   
+}
+.box .image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    display: flex;
+}
+.box .image span{
+    width: 25%;
+    height: 100%;
+    background: url('/assets/fruitsX500.jpg');
+    transition: 0.5s;
+}
+.box:hover .image span{
+    transform: translateY(-100%)
+}
+.box .image span:nth-child(1){
+    background-position: 0;
+    transition-delay: 0s;
+}
+.box .image span:nth-child(2){
+    background-position: 33.33%;
+    transition-delay: 0.1s;
+}
+.box .image span:nth-child(3){
+    background-position: 66.66%;
+    transition-delay: 0.2s;
+}
+.box .image span:nth-child(4){
+    background-position: 100%;
+    transition-delay: 0.3s;
+}
+.box .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px;
+    box-sizing: border-box;
+    text-align: center;
+    color:white;
+    transition: 0.5s;
+    transform: translateY(100%)
+}
+.box:hover .content {
+    transform: translateY(0);
+    transition-delay: 0.5s;
+}
+
+/*********************** BOX FAST FOOD SECTION ************************/
+
+.box1{
+    position: relative;
+    background:url('/assets/burger.jpg');
+    height: 200px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 3px;   
+}
+.box1 .image1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    display: flex;
+}
+.box1 .image1 span{
+    width: 25%;
+    height: 100%;
+    background: url('/assets/burger400.jpg');
+    transition: 0.5s;
+}
+.box1:hover .image1 span{
+    transform: translateY(-100%)
+}
+.box1 .image1 span:nth-child(1){
+    background-position: 0;
+    transition-delay: 0s;
+}
+.box1 .image1 span:nth-child(2){
+    background-position: 33.33%;
+    transition-delay: 0.1s;
+}
+.box1 .image1 span:nth-child(3){
+    background-position: 66.66%;
+    transition-delay: 0.2s;
+}
+.box1 .image1 span:nth-child(4){
+    background-position: 100%;
+    transition-delay: 0.3s;
+}
+.box1 .content1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px;
+    box-sizing: border-box;
+    text-align: center;
+    color:white;
+    transition: 0.5s;
+    transform: translateY(100%)
+}
+.box1:hover .content1 {
+    transform: translateY(0);
+    transition-delay: 0.5s;
+}
+
+/***********************  BOX CHOCOLATE SECTION ********************/
+
+.box2{
+    position: relative;
+    background:url('/assets/choco.gif');
+    height: 170px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 3px;   
+}
+.box2 .image2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    display: flex;
+}
+.box2 .image2 span{
+    width: 25%;
+    height: 100%;
+    background: url('/assets/choco400.jpg');
+    transition: 0.5s;
+}
+.box2:hover .image2 span{
+    transform: translateY(-100%)
+}
+.box2 .image2 span:nth-child(1){
+    background-position: 0;
+    transition-delay: 0s;
+}
+.box2 .image2 span:nth-child(2){
+    background-position: 33.33%;
+    transition-delay: 0.1s;
+}
+.box2 .image2 span:nth-child(3){
+    background-position: 66.66%;
+    transition-delay: 0.2s;
+}
+.box2 .image2 span:nth-child(4){
+    background-position: 100%;
+    transition-delay: 0.3s;
+}
+.box2 .content2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px;
+    box-sizing: border-box;
+    text-align: center;
+    color:white;
+    transition: 0.5s;
+    transform: translateY(100%)
+}
+.box2:hover .content2 {
+    transform: translateY(0);
+    transition-delay: 0.5s;
+}
+/**********************END OF BOX SECTION*****************************/
+
+.pizzaMakerMain {
+    position: relative;
+    width: 100%;
+    height: 170px;
+    border-radius: 3px;
+}
+.pizzaMakerMainToHover img{
+    width: 100%;
+    height: 170px;
+    border-radius: 3px;
+}
+.pizzaMakerMainHover  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:170px;
+    border-radius:5px;
+    background:url('/assets/pizzaMakerBlack.jpg') center center;
+    color:white;
+    visibility: hidden; 
+}
+.pizzaMakerMainHover:before{
+    background: rgba(255, 255, 255, .1)
+}
+.pizzaMakerMain :hover >.pizzaMakerMainHover{
+    visibility: visible;
+    animation: fadein 1.5s;
+}
+.sideDrawerCategory{
+    animation: fadein 1.5s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+    @media screen and (max-width: 1415px) { 
+        .MenuHeader {
+            width: 1415px !important;
+            height:300px;
+            margin-top: 0 !important;
+          }
+          .menuSectionCards{
+              width: 1300px !important;
+              margin:0px;
+          }
+          .box{
+              width: 500px;
+          }
+          .box .image span{
+            background: url('/assets/fruitsResize500.jpg');
+          }
+          .box1{
+            width: 350px;
+          }
+          .box1 .image1 span{
+            background: url('/assets/burger350.jpg');
+          }
+          .box2{
+            width: 350px;
+          }
+          .box2 .image2 span{
+            background: url('/assets/choco350.jpg');
+          }
+          .pizzaMakerMain{
+              width: 500px
+          }
+        
+}
+
+    @media screen and (max-width: 1280px) {
+        .MenuHeader {
+            width: 1250px !important;
+            height:300px;
+            margin-top: 0 !important;
+          } 
+        .menuSectionCards{
+            width: 100% !important;
+        }
+        .FourCategoryCards{
+            width: 100% !important;
+        }
+        .box{
+            width: 450px;
+        }
+        .box .image span{
+          background: url('/assets/fruitsResize450.jpg');
+        } 
+        .pizzaMakerMain{
+            width: 450px;
+        }
+          
+}
+
+@media screen and (max-width: 1250px){
+    .FourCategoryCards{
+        width: 100% !important;
+    }
+    .menuSectionCards{
+        width: 100% !important;
+    }
+  
+}
+@media screen and (max-width: 1150px){
+    .MenuHeader {
+        width: 1150px !important;
+        height:300px;
+        margin-top: 0 !important;
+      } 
+    .menuSectionCards{
+        width: 100% !important;
+    }
+    .FourCategoryCards{
+        width: 100% !important;
+    }
+    .box{
+        width: 400px;
+    }
+    .box .image span{
+      background: url('/assets/fruitsResize400.jpg');
+    } 
+    .pizzaMakerMain{
+        width: 400px;
+    }
+    .mainMenu{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .MenuHeader {
+        width: 1100px !important;
+        height:300px;
+        margin-top: 0 !important;
+      } 
+    .menuSectionCards{
+        width: 100% !important;
+        display:block!important; 
+        position:  relative !important;
+    }
+    .pizzaMakerGrid{
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+    }
+    .FourCategoryCards{
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+    }
+    .sideDrawerCategory{
+        display: block !important;
+        color: aliceblue;
+    }
+    .box{
+        width: 400px;
+    }
+    .box .image span{
+      background: url('/assets/fruitsResize400.jpg');
+    }
+    .box1{
+      width: 400px;
+    }
+    .box1 .image1 span{
+      background: url('/assets/burger400.jpg');
+    }
+    .box2{
+      width: 400px;
+    }
+    .box2 .image2 span{
+      background: url('/assets/choco400.jpg');
+    }
+    .pizzaMakerMain{
+        width: 400px
+    }
+    .mainMenu{
+        display: none;
+    }
+    .mainMenuDiv{
+        background:url('/assets/silverBackground.png')  center center;
+    }
+}
+@media screen and (max-width: 918px){
+    .MenuHeader {
+        width: 918px !important;
+        height:300px;
+        margin-top: 0 !important;
+      } 
+    .menuSectionCards{
+        width: 100% !important;
+        display:block!important; 
+        position:  relative !important;
+    }
+    .pizzaMakerGrid{
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+    }
+    .FourCategoryCards{
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+    }
+    .sideDrawerCategory{
+        display: block !important;
+        color: aliceblue;
+    }
+    .box{
+        width: 350px;
+    }
+    .box .image span{
+      background: url('/assets/fruitsResize350.jpg');
+    }
+    .box1{
+      width: 350px;
+    }
+    .box1 .image1 span{
+      background: url('/assets/burger350.jpg');
+    }
+    .box2{
+      width: 350px;
+    }
+    .box2 .image2 span{
+      background: url('/assets/choco350.jpg');
+    }
+    .pizzaMakerMain{
+        width: 350px
+    }
+    .mainMenu{
+        display: none;
+    }
+    .mainMenuDiv{
+        background:url('/assets/silverBackground.png')  center center;
+    }
+}
+@media screen and (max-width: 815px){
+    .MenuHeader {
+        width: 815px !important;
+        height:250px;
+        margin-top: 0 !important;
+      } 
+    .menuSectionCards{
+        width: 100% !important;
+        display:block!important; 
+        position:  relative !important;
+    }
+    .pizzaMakerGrid{
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+    }
+    .FourCategoryCards{
+        width: 100% !important;
+        display: block !important;
+        margin-top: 30px;
+    }
+    .pizzaMakerGrid{
+        width: 100% !important;
+        display: block !important;
+        margin-bottom: 30px;
+    }
+    .sideDrawerCategory{
+        display: block !important;
+        color: aliceblue;
+        /*top:20px !important;*/
+    }
+    .box{
+        width: 550px;
+        margin: 0 auto !important;
+    }
+    .box .image span{
+      background: url('/assets/fruitsX500.jpg');
+    } 
+    .box1{
+      width: 550px;
+      margin: 0 auto !important;
+    }
+    .box1 .image1 span{
+      background: url('/assets/burger550.jpg');
+    }
+    .box2{
+      width: 550px;
+      margin: 0 auto !important;
+    }
+    .box2 .image2 span{
+      background: url('/assets/choco550.jpg');
+    }
+    .pizzaMakerMain{
+        width: 550px;
+        margin: 0 auto !important;
+    }
+    .mainMenu{
+        display: none;
+    }
+    .mainMenuDiv{
+        background:url('/assets/silverBackground.png')  center center;
+    } 
+    .sideDrawerCategory{
+        background: transparent !important;
+    }
+    .sideDrawerCategory{
+        left:0 !important;
+        top:100px !important;
+    }
+    .categoryShowSide1{
+        left:0 !important;
+        top: 170px !important;
+        animation: fadein 1.5s;
+    }
+    .categoryShowSide2{
+        left:0 !important;
+        top: 240px !important;
+        animation: fadein 1.6s;
+    }
+    .categoryShowSide3{
+        left:0 !important;
+        top: 310px !important;
+        animation: fadein 1.7s;
+    }
+    .categoryShowSide4{
+        left:0 !important;
+        top: 380px !important;
+        animation: fadein 1.8s;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .MenuHeader {
+        width: 650px !important;
+        height:200px;
+        margin-top: 0 !important;
+      } 
+    .menuSectionCards{
+        width: 100% !important;
+        display:block!important; 
+        position:  relative !important;
+    }
+    .pizzaMakerGrid{
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+    }
+    .FourCategoryCards{
+        width: 100% !important;
+        display: block !important;
+        margin-top: 30px;
+    }
+    .pizzaMakerGrid{
+        width: 100% !important;
+        display: block !important;
+        margin-bottom: 30px;
+    }
+    .sideDrawerCategory{
+        display: block !important;
+        color: aliceblue;
+        /*top:20px !important;*/
+    }
+    .box{
+        width: 400px;
+        margin: 0 auto !important;
+    }
+    .box .image span{
+      background: url('/assets/fruitsResize400.jpg');
+    } 
+    .box1{
+      width: 400px;
+      margin: 0 auto !important;
+    }
+    .box1 .image1 span{
+      background: url('/assets/burger400.jpg');
+    }
+    .box2{
+      width: 400px;
+      margin: 0 auto !important;
+    }
+    .box2 .image2 span{
+      background: url('/assets/choco400.jpg');
+    }
+    .pizzaMakerMain{
+        width: 400px;
+        margin: 0 auto !important;
+    }
+    .mainMenu{
+        display: none;
+    }
+    .mainMenuDiv{
+        background:url('/assets/silverBackground.png')  center center;
+    } 
+}
+@media screen and (max-width: 500px){
+    .MenuHeader {
+        width: 500px !important;
+        height:200px;
+        margin-top: 0 !important;
+      }
+    }   

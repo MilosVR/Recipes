@@ -1,0 +1,85 @@
+
+
+.mainFastFoodDiv{
+    background:url('/assets/blackCategory.jpg') center center;
+}
+.fastFoodFirstSection{
+    background:mediumPurple;
+    width:100%;
+    height:250px; 
+    display:flex;
+    justify-content:space-between; 
+    align-items:center;
+}
+.FastFoodSeconSection {
+    display:flex;
+    justify-content:space-around;
+    align-items:center ;
+    width:100% ;
+    background-size: cover ;
+    color:white ;
+    border-radius:3px;
+    height:500px;
+  }
+  .fastFoodDiamond{
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    background: #f40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: mediumpurple;
+  }
+  @media screen and (max-width:1360px){
+    .fastFoodFont img{
+        width: 400px !important;
+    }
+    .fastFoodPicture {
+        width: 400px !important;
+    }
+    .FastFoodSeconSection{
+        justify-content: center;
+    }
+    .fastFoodDiamond{
+        display: none;
+    }
+    .showFastFood {
+        display: block !important;
+        text-align: center;
+        background:mediumpurple;
+        padding: 10px;
+        margin-bottom: 30px
+    }
+  }
+  @media screen and (max-width:1150px){
+    .fastFoodFont img{
+        width: 350px !important;
+    }
+    .fastFoodPicture {
+        width: 350px !important;
+    }
+    
+  }
+  @media screen and (max-width:1050px){
+    .fastFoodFirstSection{
+        display: block !important;
+        height: 380px; 
+    }
+    .fastFoodFont img{
+        width: 90% !important;
+    }
+    .fastFoodPicture{
+       display: flex !important;
+       justify-content: center !important;
+    }
+    .fastFoodPicture {
+        display: none !important;
+    }
+    .fastFoodPromo{
+        margin-top: 20px
+    }
+  }
+  @media screen and (max-width:880px){
+      
+  }
+  

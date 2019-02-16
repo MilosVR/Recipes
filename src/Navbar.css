@@ -1,0 +1,24 @@
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@media screen and (max-width: 815px){
+    .menuHome{
+        display: none !important;
+    }
+    .menuCreateRecipe{
+        display: none !important;
+    }
+    .menuPizzaMaker {
+        display: none !important;
+    }
+    .menuIconToShow{
+        display: flex !important;
+        color: white;
+        font-weight: bold;
+    }
+    .showMenuToolbar{
+        animation: fadein 1.5s;
+    }
+}
